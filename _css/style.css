@@ -1,0 +1,284 @@
+/* Formatação de texto */
+@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+
+	
+}
+
+body{
+	font-family: Arial, sans-serif;
+	color:rgb(0, 0, 0);
+	background-color: #dddddd;
+	width:98%;
+}
+
+
+p{
+	text-align: justify;
+	text-indent: 50px;
+	font-size: 16px;
+}
+
+/*Formatação de links*/
+
+a{
+	color: #00BFFF;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/*Formatação da interface*/
+
+div#interface {
+	width: 1270px;
+	background-color: white;
+	margin: -20px auto  10px auto ;
+	box-shadow: 0px 0px 20px #00BFFF;
+	padding: 10px;
+}
+
+
+header#cabecalho img#icone{
+	position: absolute;
+	left: 1090px;
+	top: 33px;
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height:3 150px;
+	background: url("file:///E:/Backup/Documentos/CURSO%20DE%20WEB/projeto-glass-html5/_imagens/glass-logo-peq.jpg") no-repeat 0px  80px; 
+}
+
+header#cabecalho h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0, .6)
+	padding: 0px;
+	margin-bottom: 10px;
+}
+
+header#cabecalho h2{
+	font-family: arial, sans-serif;
+	color: #888888;
+	font-size: 30px;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+/* Formatação de imagens com lengada*/
+
+figure.foto-legenda {
+	position: relative;
+	border: 10px solid white; 
+	box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img {
+	width: 100%;
+	height:100%;
+}
+figure.foto-legenda figcaption {
+	opacity:0; 
+	position: absolute;
+	top:0px;
+	color: white;
+	background-color: rgba(0,0,0,0.4);
+	width:100%;
+	height:100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition-duration: 1s;
+
+}
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+
+}
+
+/*Formatação do menu*/
+
+nav#menu{
+	display: block;
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 400px;
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color:#9C9C9C;
+	padding: 10px;
+	margin: 2px;
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+	transition: 1s;
+}
+nav#menu h1{
+	display: none;
+}
+
+nav#menu a{
+	color: black;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	font-weight: bold;
+
+}
+
+nav#menu a:hover{
+	color: #00BFFF;
+	/*text-decoration: underline;*/
+}
+
+/*Formatação do corpo da pagina em relação organização*/
+
+section#corpo {
+	display: block;
+	width: 720px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+/*Formatação de artigo/Interfaces*/
+
+article#noticia-principal h2{
+	font-size: 13pt;	
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+	font-family: "FonteLogo", sans-serif;
+	font-size: 25pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px:;
+}
+
+
+header#cabecalho-artigo h2{
+	font-size: 15pt;
+	color: #B2DFEE;
+	background-color: #ffffff;
+	margin: 0px;
+
+
+	
+}
+
+header#cabecalho-artigo h3{
+	font-size: 10pt;
+	color: #606060;	
+}
+
+/*.data{
+	text-align: right;*/
+	
+}
+
+/*Formatação de tabela dentro do corpo*/
+
+table#tabela{
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabela td{
+	border:1px solid #606060;
+	padding: 10px;
+	text-align:center;
+	vertical-align: middle;
+
+}
+
+table#tabela td.ce{
+	color: white;
+	background-color: #606060;
+	vertical-align: top;
+
+}
+
+table#tabela td.cd{
+	background-color: #cecece;
+}
+
+table#tabela caption{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+
+table#tabela caption span{
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+aside#lateral{
+	display: block;
+	width: 500px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+
+}
+
+aside#lateral h1{
+	font-family: "FonteLogo", sans-serif;
+	font-size: 20pt;
+	color: #606060
+}
+
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 13pt;
+	color: white;
+	padding: 5px
+
+}
+
+/*Fim da tabela graças a Deus kkkkkkkkk*/
+
+footer#rodape{
+	clear: both;
+	border-top: 1px solid #606060;
+
+
+}
+
+footer#rodape p{
+	text-align:center;
+
+}
+
+video#filme007{
+	position: relative;
+	left: 100px;
+}
+
+video#filme008{
+	position: relative;
+	left: 55px;
+}
